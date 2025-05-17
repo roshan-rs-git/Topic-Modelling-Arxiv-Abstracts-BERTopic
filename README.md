@@ -77,7 +77,7 @@ Topic size distribution: min=100, max=6818, ratio=0.0147
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/arxiv-topic-modeling.git
+git clone https://github.com/roshan-rs-git/arxiv-topic-modeling.git
 cd arxiv-topic-modeling
 ```
 
@@ -94,8 +94,17 @@ pip install -r requirements.txt
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/arxiv-topic-modeling/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/roshan-rs-git/arxiv-topic-modeling/issues).
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
+
+### Data License
+This project uses data from arXiv.org, which maintains specific licensing terms:
+
+- ArXiv.org allows all articles to be viewed and downloaded freely by anyone
+- Each article on arXiv has its own license, chosen by the submitter (CC BY 4.0, CC BY-SA 4.0, CC BY-NC-SA 4.0, CC BY-NC-ND 4.0, arXiv.org perpetual license, or CC Zero)
+- ArXiv metadata is provided under [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+
+For more information about arXiv's licensing, please visit [arXiv License Information](https://info.arxiv.org/help/license/index.html).
