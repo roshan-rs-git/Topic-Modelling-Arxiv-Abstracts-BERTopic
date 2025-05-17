@@ -1,7 +1,6 @@
-# 📚 Topic Modelling Arxiv Abstracts Using BERTopic
-This project analyzes 2.7M arXiv research papers by clustering their abstracts using BERTopic to uncover hidden thematic trends, while leveraging categories as labels for validation. The goal is to map the evolution of scientific topics and identify interdisciplinary connections in large-scale academic literature.
-This project applies modern topic modeling techniques to a large-scale collection of arXiv paper abstracts (~2.7 million), with the goal of automatically clustering them into meaningful topics and generating human-readable labels.
+# 📚 Topic Modelling ArXiv Abstracts Using BERTopic
 
+This project analyzes 2.7M arXiv research papers by clustering their abstracts using BERTopic to uncover hidden thematic trends, while leveraging categories as labels for validation. The goal is to map the evolution of scientific topics and identify interdisciplinary connections in large-scale academic literature.
 
 ## 🚀 Overview
 
@@ -9,7 +8,20 @@ We utilize **BERTopic**, which integrates Transformer-based sentence embeddings,
 
 This project was built as part of our final submission for CS 5660: Advanced Artificial Intelligence.
 
----
+## 📊 Results
+
+Our model identified 121 distinct topics from the ArXiv abstracts with the following metrics:
+- **Number of topics found**: 121
+- **Documents per topic (avg)**: 455.5
+- **Topic diversity score**: 0.7322 (higher is better)
+
+### Top 5 largest topics:
+- **Topic 0** (Count: 6818): image, to, learning, and, our, methods, on, data, training, performance
+- **Topic 1** (Count: 5824): spin, magnetic, temperature, the, phase, in, graphene, electron, of, electronic
+- **Topic 2** (Count: 1437): robot, policy, learning, reinforcement, rl, robots, control, agent, tasks, planning
+- **Topic 3** (Count: 1326): graphs, graph, vertices, vertex, edge, number, edges, every, if, coloring
+
+Topic size distribution: min=100, max=6818, ratio=0.0147
 
 ## ✨ Key Features
 
@@ -21,8 +33,6 @@ This project was built as part of our final submission for CS 5660: Advanced Art
   - KeyBERT + Maximal Marginal Relevance (MMR)
 - 📊 Visualizations of topic clusters and top keywords
 - 📈 Scalable to millions of documents
-
----
 
 ## 🧰 Tech Stack
 
@@ -38,12 +48,66 @@ This project was built as part of our final submission for CS 5660: Advanced Art
 | Pandas / Numpy        | Data wrangling and stats            |
 | Matplotlib / Plotly   | Visualization                       |
 
----
-
 ## 📂 Repository Structure
 
 ```bash
-├── Final_code_100000.ipynb     # Main notebook for training and topic modeling
-├── aiCS5660_FinalProject_Report.docx  # Final project report
-├── README.md                   # This file
-└── requirements.txt            # Environment dependencies
+├── dataset/                          # Data directory
+│   ├── preprocessed/                 # Preprocessed datasets
+│   │   └── arxiv_processed_100000.csv
+│   └── raw/sample/                   # Raw and sampled data
+│       └── arxiv_sampled_dataset.json
+├── notebooks/                        # Jupyter notebooks
+│   ├── Data_Cleaning/                # Data preprocessing
+│   │   └── Arxiv_datacleaning.ipynb
+│   ├── Model_Building_Final/         # Model implementation
+│   │   └── Arxiv_BERTopic_Modelling_100,000samples.ipynb
+│   └── visualizations/               # Results visualization
+│       └── Arxiv_Data_Visualizations.ipynb
+├── README.md                         # Project documentation
+└── requirements.txt                  # Environment dependencies
+```
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Python 3.10 or higher
+- Pip package manager
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/arxiv-topic-modeling.git
+cd arxiv-topic-modeling
+```
+
+2. Install required packages
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the notebooks in the following order:
+   - First, data cleaning: `notebooks/Data_Cleaning/Arxiv_datacleaning.ipynb`
+   - Then, model building: `notebooks/Model_Building_Final/Arxiv_BERTopic_Modelling_100,000samples.ipynb`
+   - Finally, visualizations: `notebooks/visualizations/Arxiv_Data_Visualizations.ipynb`
+
+## 📝 Citation
+
+If you use this work in your research, please cite:
+
+```
+@misc{arxiv_topic_modeling,
+  author = {Your Name},
+  title = {Topic Modelling ArXiv Abstracts Using BERTopic},
+  year = {2025},
+  howpublished = {\url{https://github.com/yourusername/arxiv-topic-modeling}}
+}
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/arxiv-topic-modeling/issues).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
