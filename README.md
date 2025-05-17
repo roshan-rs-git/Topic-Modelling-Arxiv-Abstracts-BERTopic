@@ -91,18 +91,6 @@ pip install -r requirements.txt
    - Then, model building: `notebooks/Model_Building_Final/Arxiv_BERTopic_Modelling_100,000samples.ipynb`
    - Finally, visualizations: `notebooks/visualizations/Arxiv_Data_Visualizations.ipynb`
 
-## 📝 Citation
-
-If you use this work in your research, please cite:
-
-```
-@misc{arxiv_topic_modeling,
-  author = {Your Name},
-  title = {Topic Modelling ArXiv Abstracts Using BERTopic},
-  year = {2025},
-  howpublished = {\url{https://github.com/yourusername/arxiv-topic-modeling}}
-}
-```
 
 ## 🤝 Contributing
 
